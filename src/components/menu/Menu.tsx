@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 
-export const Menu = () => {
+// чтобы не записывать так, записываем в упрощенной форме сразу в компоненту(ниже)
+//type MenuPropsType = {
+//    menuItems: Array<string> }
+
+
+export const Menu = (props: {menuItems: Array<string> }) => {
     return (
         <StyledMenu>
             <ul>
