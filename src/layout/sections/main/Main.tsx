@@ -58,6 +58,7 @@ const MainTitle = styled.h1`
   font-size: 27px;
   font-weight: 400;
 `
+
 const Name = styled.h2`
   font-family: 'Josefin Sans', 'sans-serif';
   font-size: 50px;
@@ -65,7 +66,7 @@ const Name = styled.h2`
   letter-spacing: 2.5px;
   margin: 10px 0;
 
-  span {
+    span {
     position: relative;
     z-index: 0;
 
@@ -82,6 +83,7 @@ const Name = styled.h2`
     }
   }
 `
+
 const SmallText = styled.span`
   font-size: 14px;
   font-weight: 400;
