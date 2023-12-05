@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0;
     font-family: 'Poppins', 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,25 +20,26 @@ export const GlobalStyle = createGlobalStyle`
     color: ${theme.colors.font};
     line-height: 1.2;
   }
-  
+
   a {
     text-decoration: none;
+    color: ${theme.colors.font};
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   button {
     background-color: unset;
-    border: none ;
+    border: none;
   }
-  
+
   section {
     padding: 100px 0;
   }
-  
-  
+
+
   section:nth-of-type(odd) {
     background-color: ${theme.colors.primaryBg};
   }
@@ -46,4 +47,17 @@ export const GlobalStyle = createGlobalStyle`
   section:nth-of-type(even) {
     background-color: ${theme.colors.secondaryBg};
   }
+
+  h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
 `
+
