@@ -25,6 +25,10 @@ const StyledWork = styled.div`
     background-color: #ffe869;
     max-width: 540px;
     width: 100%;
+  
+  ${Link} {
+    padding: 10px 0;
+  }
 `
 
 const Image = styled.img`

@@ -32,8 +32,7 @@ const StyledTabMenu = styled.nav`
   }
 `
 const ListItem = styled.li`
-  position: relative;
-  z-index: 0;
+
 `
 
 
