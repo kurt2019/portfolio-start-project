@@ -9,9 +9,8 @@ import {Link} from "../../../../components/Link";
 
 export const TabMenu = (props: { menuItems: Array<string> }) => {
     return (
-        <StyledMenu>
+        <StyledTabMenu>
             <ul>
-
                 {props.menuItems.map((item, index) => {
                     return (
                         <ListItem key={index}>
@@ -19,15 +18,13 @@ export const TabMenu = (props: { menuItems: Array<string> }) => {
                         </ListItem>
                     )
                 })}
-
-
             </ul>
-        </StyledMenu>
+        </StyledTabMenu>
     );
 };
 
-const StyledMenu = styled.nav`
-  margin-bottom: 20px;
+const StyledTabMenu = styled.nav`
+  margin-bottom: 40px;
   ul {
     display: flex;
     gap: 20px;
@@ -38,4 +35,9 @@ const ListItem = styled.li`
   position: relative;
   z-index: 0;
 `
+
+
+
+
+
 

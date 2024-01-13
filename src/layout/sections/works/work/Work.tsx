@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Link} from "../../../../components/Link";
 
 
 type WorkPropsType = {
@@ -30,10 +31,6 @@ const Image = styled.img`
     width: 100%;
     height: 260px;
     object-fit: cover;
-`
-
-const Link = styled.a`
-    
 `
 
 const Title = styled.h3`

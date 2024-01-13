@@ -19,9 +19,9 @@ export const Link = styled.a`
     background-color: ${theme.colors.accent};
 
     position: absolute;
-    bottom: -6px; // -5px does not fit as in the video
+    bottom: -5px; // -5px does not fit as in the video
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: -1;
   }
 `

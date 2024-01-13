@@ -17,7 +17,7 @@ export const Skill = (props: SkillPropsType) => {
                     <Icon iconId={props.iconId}/>
                 </IconWrapper>
                 <SkillTitle>{props.title}</SkillTitle>
-                <Skilltext>{props.description}</Skilltext>
+                <SkillText>{props.description}</SkillText>
             </FlexWrapper>
         </StyledSkill>
     );
@@ -51,7 +51,7 @@ const SkillTitle = styled.h3`
   text-transform: uppercase;
 `
 
-const Skilltext = styled.p`
+const SkillText = styled.p`
   text-align: center;
   line-height: 1.4;
 `
