@@ -4,6 +4,7 @@ import photo from '../../../assets/images/photo.jpg'
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
     return (
@@ -45,6 +46,11 @@ const PhotoWrapper = styled.div`
     top: -24px;
     left: 24px;
     z-index: -1;
+    
+    @media ${theme.media.mobile} {
+      width: 314px;
+      height: 414px;
+    }
   }
 `
 
@@ -54,19 +60,22 @@ const Photo = styled.img`
   object-fit: cover;
   
   @media ${theme.media.mobile} {
-    
+    width: 310px;
+    height: 380px;
   }
 `
 
 const MainTitle = styled.h1`
-  font-size: 27px;
-  font-weight: 400;
+  //font-size: 27px;
+  //font-weight: 400;
+  ${font({weight: 400, Fmax: 27, Fmin: 20})}
 `
 
 const Name = styled.h2`
-  font-family: 'Josefin Sans', 'sans-serif';
-  font-size: 50px;
-  font-weight: 700;
+  ${font({family: "'Josefin Sans', 'sans-serif'", weight: 700, Fmax: 50, Fmin: 36})}
+  //font-family: 'Josefin Sans', 'sans-serif';
+  //font-size: 50px;
+  //font-weight: 700;
   letter-spacing: 2.5px;
   margin: 10px 0;
 
