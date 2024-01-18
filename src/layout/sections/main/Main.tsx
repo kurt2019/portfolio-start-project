@@ -35,6 +35,7 @@ const StyledMain = styled.section`
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
+  margin-top: 65px;
   
   &::before {
     content: "";
@@ -50,6 +51,8 @@ const PhotoWrapper = styled.div`
     @media ${theme.media.mobile} {
       width: 314px;
       height: 414px;
+      top: -17px;
+      left: 20px;
     }
   }
 `
@@ -58,6 +61,7 @@ const Photo = styled.img`
   width: 350px;
   height: 430px;
   object-fit: cover;
+  margin-right: 20px;
   
   @media ${theme.media.mobile} {
     width: 310px;
@@ -82,6 +86,7 @@ const Name = styled.h2`
     span {
     position: relative;
     z-index: 0;
+    white-space: nowrap;
 
     &::before {
       content: "";
@@ -94,6 +99,10 @@ const Name = styled.h2`
       bottom: 0;
       z-index: -1;
     }
+  }
+  
+  @media ${theme.media.mobile} {
+    margin: 15px 0 22px;
   }
 `
 
