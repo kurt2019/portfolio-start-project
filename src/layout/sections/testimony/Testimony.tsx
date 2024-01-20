@@ -28,6 +28,7 @@ const StyledTestimony = styled.section`
   background-color: #aeb9ff;
 
   ${IconWrapper} {
-    margin: 40px 0 72px;
+    // no 28px in video
+    margin: 35px 0 72px;
   }
 `
