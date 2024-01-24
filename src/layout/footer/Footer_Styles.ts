@@ -41,7 +41,7 @@ const SocialLink = styled.a`
   &:hover {
     color: ${theme.colors.primaryBg};
     transform: translateY(-4px);
-
+    background-color: ${theme.colors.accent};
   }
 `
 

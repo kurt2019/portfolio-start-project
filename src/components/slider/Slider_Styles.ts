@@ -3,9 +3,11 @@ import {theme} from "../../styles/Theme";
 
 const Slider = styled.div`
   max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+border: 1px solid darkred;
 `
 
 const Slide = styled.div`
@@ -26,7 +28,7 @@ const Name = styled.span`
   display: inline-block;
 `
 
-const Pagination = styled.span`
+const Pagination = styled.div`
     span {
       display: inline-block;
       width: 7px;
