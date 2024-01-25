@@ -10,7 +10,7 @@ import {S} from "./Works_Styles"
 
 // const tabsItems = ["All", "landing page", "React", "spa"]
 
-const tabsItems:  Array<{status: TabsStatusType, title: string}> = [
+const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
     {
         title: "All",
         status: "all"
@@ -48,17 +48,17 @@ export const Works: React.FC = () => {
     const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
     let filteredWorks = worksData
 
-    if(currentFilterStatus === "landing") {
+    if (currentFilterStatus === "landing") {
         filteredWorks = worksData.filter(work => work.type === "landing")
     }
-    if(currentFilterStatus === "react") {
+    if (currentFilterStatus === "react") {
         filteredWorks = worksData.filter(work => work.type === "react")
     }
-    if(currentFilterStatus === "spa") {
+    if (currentFilterStatus === "spa") {
         filteredWorks = worksData.filter(work => work.type === "spa")
     }
 
-    function changeFilterStatus (value: TabsStatusType) {
+    function changeFilterStatus(value: TabsStatusType) {
         setCurrentFilterStatus(value)
     }
 
@@ -66,18 +66,18 @@ export const Works: React.FC = () => {
     return (
         <S.Works>
             <Container>
-            <SectionTitle>My Works</SectionTitle>
-            <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}
-                     currentFilterStatus={currentFilterStatus}/>
-            <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
+                <SectionTitle>My Works</SectionTitle>
+                <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}
+                         currentFilterStatus={currentFilterStatus}/>
+                <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
 
-                {filteredWorks.map((w)=> {
-                    return <Work title={w.title}
-                                 src={w.src}
-                                 text={w.text}/>
-                })}
+                    {filteredWorks.map((w) => {
+                        return <Work title={w.title}
+                                     src={w.src}
+                                     text={w.text}/>
+                    })}
 
-            </FlexWrapper>
+                </FlexWrapper>
             </Container>
         </S.Works>
     );
