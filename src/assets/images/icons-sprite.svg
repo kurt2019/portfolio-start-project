@@ -78,28 +78,9 @@
 
     <!--    arrows -->
     <g id="arrowGoTop">
-        <rect width="30" height="30" fill="#F5F5F5"/>
-        <g id="Desktop - 1440" clip-path="url(#clip0_0_1)">
-            <rect width="1440" height="4690" transform="translate(-1380 -4630)" fill="white"/>
-            <g id="Footer">
-                <rect id="Rectangle" x="-1380" y="-155" width="1440" height="215" fill="#1F1F20"/>
-                <g id="btn-go-top" clip-path="url(#clip1_0_1)">
-                    <rect id="Rectangle 17" width="30" height="30" fill="black" fill-opacity="0.3"/>
-                    <path id="Vector"
-                          d="M13.8072 11.2806V22H16.1928V11.2806L21.3134 16.0812L23 14.5L15 7L7 14.5L8.6866 16.0812L13.8072 11.2806Z"
-                          fill="white"/>
-                </g>
-            </g>
-        </g>
-        <defs>
-            <clipPath id="clip0_0_1">
-                <rect width="1440" height="4690" fill="white" transform="translate(-1380 -4630)"/>
-            </clipPath>
-            <clipPath id="clip1_0_1">
-                <rect width="30" height="30" fill="white"/>
-            </clipPath>
-        </defs>
+        <path d="M8.1 0.5L0 8.3L1.8 10.1L6.75 5.3V15.8H8.25H9.45V5.3L14.4 10.1L16.2 8.3L8.1 0.5Z" fill="white"/>
     </g>
+
 
     <!-- quote -->
     <g id="quote">
@@ -108,3 +89,4 @@
     </g>
 
 </svg>
+
