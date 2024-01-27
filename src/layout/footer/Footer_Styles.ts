@@ -28,15 +28,15 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
   width: 35px;
   height: 35px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
+  transition: ${theme.animations.transition};
   color: ${theme.colors.accent};
 
   &:hover {
