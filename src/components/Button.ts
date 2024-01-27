@@ -10,7 +10,7 @@ export const Button = styled.button`
   height: 32px;
   position: relative;
   z-index: 0;
-  
+
   &:hover {
     &::before {
       height: 100%;
@@ -25,7 +25,7 @@ export const Button = styled.button`
     width: 50%;
     background-color: ${theme.colors.accent};
     transition: ${theme.animations.transition};
-    
+
     position: absolute;
     bottom: 0;
     left: 50%;

@@ -7,8 +7,6 @@ import {MobileMenu} from "./headerMenu/mobileMenu/ModileMenu";
 import {S} from "./Header_Styles"
 
 
-
-
 export const Header: React.FC = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 768;
@@ -20,15 +18,14 @@ export const Header: React.FC = () => {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
 
-
     return (
         <S.Header>
             <Container>
                 <FlexWrapper justify={"space-between"} align={"center"}>
-            <Logo/>
+                    <Logo/>
 
-            {width < breakpoint ? <MobileMenu />
-                                : <DesktopMenu />}
+                    {width < breakpoint ? <MobileMenu/>
+                        : <DesktopMenu/>}
                 </FlexWrapper>
             </Container>
         </S.Header>

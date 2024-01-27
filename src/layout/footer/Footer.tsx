@@ -18,7 +18,7 @@ const socialItemsData = [
     },
 ]
 
-export const Footer:React.FC = () => {
+export const Footer: React.FC = () => {
     return (
         <S.Footer>
             <FlexWrapper direction={"column"} align={"center"}>

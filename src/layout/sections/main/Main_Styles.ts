@@ -11,18 +11,18 @@ const Main = styled.section`
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
-  
+
   &::before {
     content: "";
     width: 360px;
     height: 470px;
     border: 5px solid ${theme.colors.accent};
-    
+
     position: absolute;
     top: -24px;
     left: 24px;
     z-index: -1;
-    
+
     @media ${theme.media.mobile} {
       width: 314px;
       height: 414px;

@@ -29,7 +29,6 @@ const StyledTestimony = styled.section`
   background-color: #aeb9ff;
 
   ${S.IconWrapper} {
-    // no 28px in video
     margin: 35px 0 72px;
   }
 `

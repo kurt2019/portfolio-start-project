@@ -8,7 +8,7 @@ export const GoTopBtn = () => {
     const [showBtn, setshowBtn] = useState(false)
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 200){
+            if (window.scrollY > 200) {
                 setshowBtn(true)
             } else {
                 setshowBtn(false)
@@ -19,7 +19,9 @@ export const GoTopBtn = () => {
     return (
         <>
             {showBtn && (
-                <StyledGoTopBtn onClick={ () => {scroll.scrollToTop()}}>
+                <StyledGoTopBtn onClick={() => {
+                    scroll.scrollToTop()
+                }}>
                     <Icon iconId={"arrowGoTop"} height={"15"} width={"16"} viewBox={"0 0 15 16"}/>
                 </StyledGoTopBtn>
             )}

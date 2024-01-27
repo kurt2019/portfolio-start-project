@@ -27,13 +27,11 @@ const Mask = styled.span`
   }
 `
 
-
 const NavLink = styled(Link)`
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-size: 30px;
   text-align: center;
-  //color: transparent;
 
   &::before {
     content: "";
@@ -50,13 +48,16 @@ const NavLink = styled(Link)`
     transform: scale(0);
     transition: ${theme.animations.transition};
   }
+  
   &:hover, &.active {
     &::before {
       transform: scale(1);
     }
+    
     ${Mask} {
       transform: skewX(12deg) translateX(5px) ;
       color: ${theme.colors.font};
+      
       & + ${Mask} {
         transform: skewX(12deg) translateX(-5px);
       }
@@ -82,8 +83,6 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
   transform: translateY(-100%);
   transition: 1s ease-in-out;
   
-
-  
   ul {
     display: flex;
     gap: 10px;
@@ -99,9 +98,7 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
     & ul {
       gap: 40px;
     }
-    
   `}
-  
 `
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
@@ -112,7 +109,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
   width: 200px;
   height: 200px;
   z-index: 9999999;
-  
+
   span {
     display: block;
     width: 36px;
@@ -121,11 +118,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     position: absolute;
     left: 40px;
     bottom: 50px;
-    
-    ${props => props.isOpen && css<{isOpen: boolean}>`
+
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
       background-color: rgba(255, 255, 255, 0);
     `}
-    
     &::before {
       content: "";
       display: block;
@@ -135,11 +131,11 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
       position: absolute;
       transform: translateY(-10px);
 
-      ${props => props.isOpen && css<{isOpen: boolean}>`
+      ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform: rotate(-45deg) translateY(0);
-    `}
+      `}
     }
-    
+
     &::after {
       content: "";
       display: block;
@@ -149,10 +145,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
       position: absolute;
       transform: translateY(10px);
 
-      ${props => props.isOpen && css<{isOpen: boolean}>`
-      transform: rotate(45deg) translateY(0);
+      ${props => props.isOpen && css<{ isOpen: boolean }>`
+        transform: rotate(45deg) translateY(0);
         width: 36px;
-    `}
+      `}
     }
   }
 `

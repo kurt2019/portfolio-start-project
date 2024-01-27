@@ -1,7 +1,7 @@
-import { useCallback } from "react";
-import type { Container, Engine } from "tsparticles-engine";
+import {useCallback} from "react";
+import type {Container, Engine} from "tsparticles-engine";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim";
+import {loadSlim} from "tsparticles-slim";
 
 
 export const Particle = () => {
@@ -20,18 +20,9 @@ export const Particle = () => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                // background: {
-                //     color: {
-                //         value: "#0d47a1",
-                //     },
-                // },
                 fpsLimit: 120,
                 interactivity: {
                     events: {
-                        // onClick: {
-                        //     enable: true,
-                        //     mode: "push",
-                        // },
                         onHover: {
                             enable: true,
                             mode: "repulse",
@@ -83,7 +74,7 @@ export const Particle = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 0.2, max: 1 },
+                        value: {min: 0.2, max: 1},
                     },
                 },
                 detectRetina: true,

@@ -7,15 +7,13 @@ const Slider = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-border: 1px solid darkred;
 `
 
 const Slide = styled.div`
-    text-align: center;
+  text-align: center;
 `
 
 const Text = styled.p`
-    
 `
 
 const Name = styled.span`
@@ -29,22 +27,22 @@ const Name = styled.span`
 `
 
 const Pagination = styled.div`
-    span {
-      display: inline-block;
-      width: 7px;
-      height: 7px;
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 20px;
-      
-      & + span {
-        margin-left: 5px;
-      }
-      
-      &.active {
-        background-color: ${theme.colors.accent};
-        width: 20px;
-      }
+  span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+
+    & + span {
+      margin-left: 5px;
     }
+
+    &.active {
+      background-color: ${theme.colors.accent};
+      width: 20px;
+    }
+  }
 `
 
 export const S = {
